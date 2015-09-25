@@ -1,0 +1,103 @@
+var myCart = angular.module('myCart',['ngRoute']);
+
+
+myCart.config(function($routeProvider) {
+        $routeProvider
+
+            // route for the home page
+            .when('/', {
+                templateUrl : 'pages/search.html',
+                controller  : 'cartControl'
+            })
+
+            // route for the about page
+            .when('/about', {
+                templateUrl : 'pages/details.html',
+                controller  : 'cartControl'
+            });
+});
+
+
+
+myCart.controller('cartControl', ['$scope', "loadimg",'$location', function ($scope,loadimg,$location) {
+
+        $scope.totalCost = 0;
+    
+        $scope.current = "";    
+        $scope.itemObjects = loadimg;
+        $scope.head = "Product Details";
+        
+        $scope.details = function (i) {
+    
+            $scope.head = "Product details";
+        console.log($scope.head);
+            $scope.name = "NAME :" + $scope.itemObjects[i].name;
+            $scope.price = "PRICE :" + $scope.itemObjects[i].price;
+            $scope.avail = "AVAILABILITY :" + $scope.itemObjects[i].availability;
+            $scope.total = "TOTAL COST : " + $scope.totalCost;
+            $scope.current = i;
+            $scope.imag = $scope.itemObjects[i].image;
+            $location.path("/about");
+        };
+
+        $scope.go = function(path) {
+            $location.path(path);
+        }
+        $scope.addCart = function () {
+
+            if($scope.current == "")
+            {
+                $scope.head = "No item selected!!!";
+            }
+            else
+            {
+                $scope.count = $scope.itemObjects[$scope.current].availability;
+                    if ($scope.count > 0) {
+                        $scope.count = $scope.count - 1;
+                        $scope.itemObjects[$scope.current].availability = $scope.count;
+                        $scope.totalCost = $scope.totalCost + $scope.itemObjects[$scope.current].price;
+                        $scope.cart[$scope.current] =  $scope.cart[$scope.current] + 1;
+                        $scope.details($scope.current);
+                    }
+            }
+        };
+        $scope.cancelCart = function () {
+    
+            if($scope.current == "")
+            {
+                $scope.head = "No item on cart!!!";
+            }
+            else {
+            $scope.countCancel = $scope.itemObjects[$scope.current].availability;
+            if ($scope.cart[$scope.current] > 0) {
+                $scope.countCancel = $scope.countCancel + 1;
+                $scope.itemObjects[$scope.current].availability = $scope.countCancel;
+                $scope.cart[$scope.current] = $scope.cart[$scope.current] - 1;
+                $scope.totalCost = $scope.totalCost - $scope.itemObjects[$scope.current].price;
+                $scope.details($scope.current);
+            }
+            }
+        };
+     
+    }]);
+
+myCart.directive("addCart",function() {
+    return {
+        restrict: 'A',
+        scope: true,
+        template: '<button id="add" ng-click="addCart()">ADD CART</button>'
+        //controller: 'cartControl'
+        
+        };
+});
+
+myCart.directive("cancelCart",function() {
+    return {
+        restrict: 'A',
+        scope: true,
+        template: '<button id="cancel" ng-click="cancelCart()">CANCEL  </button>'
+    };
+});
+
+
+       
