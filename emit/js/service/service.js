@@ -1,4 +1,3 @@
-
 myCart.service("loadimg", function () {
     "use strict";
     this.items = [

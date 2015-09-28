@@ -1,6 +1,4 @@
 var myCart = angular.module('myCart', ['ui.router']);
-
-
 myCart.config(function ($stateProvider, $urlRouterProvider) {
     "use strict";
       $urlRouterProvider.otherwise("/");
@@ -18,6 +16,7 @@ myCart.config(function ($stateProvider, $urlRouterProvider) {
         });
 
 });
+
 
 
 

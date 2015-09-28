@@ -1,0 +1,10 @@
+<div id="searchResult" ng-repeat = "obj in itemObjects | filter :searchTerm ">
+    <div class="container"  ng-click="$emit('itemClicked',$index)">
+    <img ng-src = "{{obj.image}}" class = "img"/>
+    <span style="margin-left:20px;float:left">
+        <h3>Product Name : {{obj.name}}</h3>
+        <h3>Price : {{obj.price}}</h3>
+        <h3>Availability : {{obj.availability}}</h3>  
+    </span>
+    </div><br>
+</div>
