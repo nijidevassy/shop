@@ -1,0 +1,22 @@
+
+app.controller('mainCntrl', ["myService",'$scope', '$location', function (myService, $scope, $location) {
+$scope.data = "";
+    $scope.companyName = null;
+    myService.details();
+    $scope.data = myService.responseValue;
+    $scope.data.then(function(value) {
+        $scope.companyName = value;
+
+         console.log($scope.companyName);
+    });
+    
+    $scope.go = function(path,index) {
+        $location.path(path);
+        myService.itemClicked=index;
+    };
+
+}]);
+  
+               
+               
+    

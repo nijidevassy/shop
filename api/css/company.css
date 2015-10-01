@@ -1,0 +1,87 @@
+body
+{
+    
+    background: url(../assets/images/login2.jpg) no-repeat center center fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#head
+{
+    width:100%;
+    text-align: center;
+    background-image: url(../assets/images/header-background.jpg);
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#head img
+{
+    top:0;
+    left:0;
+    float:left;
+    padding: 20px;
+    width: 60px;
+}
+#a, #z
+{
+    color:crimson;
+}
+#head h2
+{
+    float: center;
+    font-size: 40px;
+    color:black;
+	font-family: 'Helvetica Neue';
+	font-style: italic;
+	font-variant: normal;
+	font-weight: bold;
+
+}
+.login
+{
+    
+    border-bottom-color: black;
+    border-radius: 10px;
+    margin-left: 30%;
+    margin-top: 30px;
+    padding:20px;
+    text-align: center;
+    border: 0px;
+    color: #fff;
+    background-color:blue;
+    width: 400px;
+    height: 360px;
+}
+
+.login h1
+{
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 2.3em;
+    text-align: center;
+}
+
+#uname,#pwd
+{
+    margin-top: 25px;
+    border: 2px solid #d9d9d9;
+    border-width: inherit;
+    height: 30px;
+    width: 80%;
+
+}
+ .login button
+{ background-color: cornflowerblue;
+  border:0;
+    border-radius: 3px;
+  color:#fff;
+  padding:10px;
+  font-size:20px;
+  width:100px;
+  margin:20px auto;
+  display:block;
+  cursor:pointer;
+}

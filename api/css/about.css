@@ -1,0 +1,93 @@
+.cmp img
+{
+    width:20%;
+    margin-top: 40px;
+    height:150px;
+    float: left;
+}
+.cmp
+{
+    width:44%;
+    height: 470px;
+    float:left;
+    margin: 15px;
+    padding: 5px;
+    color: chocolate;
+    text-align: center;
+    border: 10px solid gray;
+    border-radius: 15px;
+}
+
+.cmp h3
+{
+    background-color: #0404B4;
+    padding: 10px;
+}
+
+.cmp span
+{
+    width: 75%;
+    font-family: monospace;
+    text-align: justify;
+    font-size: 15px;
+    color: #000099;
+    float: right;
+    margin:5px;
+}
+/*
+.cmpo 
+  {
+    background-color:antiquewhite;
+  }
+.cmpe
+  {
+    background-color: rgb(147, 182, 202);
+  }
+*/
+#details
+{
+    width: 85%;
+    background: url(../assets/images/header-background2.jpg) no-repeat center;
+    background-size: cover;
+    margin:50px;
+    
+}
+
+#details h2
+{
+    text-align: center;
+    background-color: darkblue;
+    color: crimson;
+    padding: 10px;
+}
+
+#details h3
+{
+    color: gray;
+    margin-left: 120px;
+    
+}
+
+#details label
+{
+    margin-left:80px;
+    color: #F7D511;
+    font-family: 'Helvetica Neue';
+	font-size: 22px;
+	font-style: italic;
+	font-variant: normal;
+	font-weight: bold;
+}
+
+#details h3 button
+{
+    width:80px;
+    padding: 10px;
+    background-color: crimson;
+    color: cornsilk;
+}
+
+#details p
+{
+    margin-left: 120px;
+}

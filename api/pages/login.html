@@ -1,0 +1,34 @@
+<div class="login">
+    <h1>LOG-IN</h1>
+        <br>
+        <form action="#" name = "myform">
+        <input id="uname" type="username" name="uname" ng-model="username" placeholder="Username" ng-minlength="3" 
+        ng-maxlength="8" required autofocus> <br><br>
+         
+            <div ng-messages="myform.uname.$error" ng-show="myform.uname.$touched">
+                        <p ng-message="required">Data required.</p>
+                        <p ng-message="minlength">Too short.</p>
+                        <p ng-message="maxlength">Too long.</p>
+                
+                
+                <!-- <div ng-messages-include = 'pages/messages.html'></div>  -->
+            </div>
+            
+        <input id="pwd" type="password" name="pwd" ng-model='password' placeholder="Password" ng-minlength="3" 
+        ng-maxlength="8" required>
+            <br><br>
+            <span ng-messages="myform.pwd.$error" ng-show="myform.pwd.$touched">
+                
+                        <p ng-message="required">Data required.</p>
+                        <p ng-message="minlength">Too short.</p>
+                        <p ng-message="maxlength">Too long.</p>
+            </span>
+            
+        
+        <button type="submit" name="log" value="login" ng-click="login()">LOGIN</button>
+        <br>
+            <br><span ng-bind="msg"> </span>
+        </form>   
+        
+    </div>
+    

@@ -1,0 +1,35 @@
+<!Doctype html>
+
+<html>
+<head>
+    <title>Company Profile</title>
+    <link rel="stylesheet" type="text/css" href="css/company.css">
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="assets/vendor/angular-messages.js"></script>
+    
+    <script src="js/service/service.js"></script>
+    <script src="js/controller/appCntrl.js"></script>
+    <script src="js/controller/mainCntrl.js"></script>
+    <script src="js/controller/detailsCntrl.js"></script>
+
+     <script src="assets/vendor/angular-ui-router.js"></script>
+</head>
+
+    <body>
+<div id="head">
+    <table style="width:100%">
+        <tr>
+            <td><img src="assets/images/logo.jpg"></td>
+<td style="width:100%"><h2><b id="a"> A</b> 2 <b id="z"> Z</b> GROUP OF COMPANIES</h2></td>
+            
+            </tr>
+        </table>
+</div>
+        
+     <div ui-view ng-app="company"></div>
+    </body>
+</html>

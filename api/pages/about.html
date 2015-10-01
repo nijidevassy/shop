@@ -1,0 +1,8 @@
+<div id="about">
+<div ng-repeat = "cmp in data track by $index" ng-click= "go('/details',$index)">
+<div class="cmp" ng-class-odd='cmpo' ng-class-even='cmpe'>
+    <h3>{{cmp.details.company}}</h3><br>
+    <img src="assets/images/Company.png"/><span>{{cmp.details.description}}</span>
+</div>
+    </div>
+</div>
