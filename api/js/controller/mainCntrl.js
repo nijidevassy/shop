@@ -2,7 +2,7 @@ app.controller('mainCntrl', ["myService", '$scope', '$location', '$timeout', fun
 
     "use strict";
     $scope.detail = [];
-    myService.details();
+    myService.details("http://nodejs-qbjsstudy.rhcloud.com/api/get_shop_data");
     console.log(myService);
     $scope.data = myService;
     
