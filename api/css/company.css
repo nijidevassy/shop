@@ -6,7 +6,7 @@ body
     background-repeat: no-repeat;
 }
 
-#head
+.head
 {
     width:100%;
     text-align: center;
@@ -17,23 +17,24 @@ body
     background-repeat: no-repeat;
 }
 
-#head img
+.head img
 {
     top:0;
     left:0;
     float:left;
     padding: 20px;
-    width: 60px;
+    width: 100px;
+    
 }
 #a, #z
 {
     color:crimson;
 }
-#head h2
+.head h2
 {
     float: center;
     font-size: 40px;
-    color:black;
+    color:darkorange;
 	font-family: 'Helvetica Neue';
 	font-style: italic;
 	font-variant: normal;
@@ -51,9 +52,9 @@ body
     text-align: center;
     border: 0px;
     color: #fff;
-    background-color:blue;
+    background: url("../assets/images/login-back.jpg");
     width: 400px;
-    height: 360px;
+    height: auto;
 }
 
 .login h1
@@ -70,7 +71,8 @@ body
     border: 2px solid #d9d9d9;
     border-width: inherit;
     height: 30px;
-    width: 80%;
+    width: 70%;
+    color: black;
 
 }
  .login button
@@ -85,3 +87,64 @@ body
   display:block;
   cursor:pointer;
 }
+
+@media screen and (min-width:550px) and (max-width: 800px)
+    {
+.head h2
+    {
+        font-size: 25px;
+    }
+.head img
+        {
+            width: 70px;
+        }
+.login h1
+        {
+         font-size: 20px;   
+        }
+.login
+        {
+            width:40%;
+            padding: 10px;
+    }
+.login button
+        {
+            padding:5px;
+            font-size:10px;
+            width:50px;
+        }
+    }
+
+@media screen and (max-width:550px)
+    {
+        .head img
+        {
+            width: 40px;
+            padding: 5px;
+        }
+        .head h2
+        {
+            font-size: 15px;
+        }
+        .login h1
+        {
+         font-size: 12px;
+            padding: 0px;
+        }
+        .login
+        {
+            width:50%;
+            padding: 3px;
+        }
+        .login button
+        {
+            padding:5px;
+            font-size:10px;
+            width:50px;
+        }
+        #uname,#pwd
+        {
+            height: 15px;
+            padding: 0px;
+        }
+    }

@@ -8,11 +8,11 @@
 .cmp
 {
     width:44%;
-    height: 470px;
+    height: 500px;
     float:left;
     margin: 15px;
     padding: 5px;
-    color: chocolate;
+    color: #dbd3cd;
     text-align: center;
     border: 10px solid gray;
     border-radius: 15px;
@@ -20,7 +20,7 @@
 
 .cmp h3
 {
-    background-color: #0404B4;
+    background-color: #0ab4eb;
     padding: 10px;
 }
 
@@ -30,58 +30,140 @@
     font-family: monospace;
     text-align: justify;
     font-size: 15px;
-    color: #000099;
+    color: #fff2f2;
     float: right;
     margin:5px;
 }
-/*
-.cmpo 
-  {
-    background-color:antiquewhite;
-  }
-.cmpe
-  {
-    background-color: rgb(147, 182, 202);
-  }
-*/
+
 #details
 {
-    width: 85%;
-    background: url(../assets/images/header-background2.jpg) no-repeat center;
+    width: 60%;
+    background:  url(../assets/images/bg.jpg) no-repeat center;
     background-size: cover;
     margin:50px;
+    margin-left: 25%;
+    border-radius: 20px;
     
 }
 
 #details h2
 {
     text-align: center;
-    background-color: darkblue;
-    color: crimson;
+    color: whitesmoke;
+    background-color: black;
+    text-decoration-line: underline;
+    text-decoration-color: floralwhite;
+	font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;
+    text-decoration-line: underline;
     padding: 10px;
 }
 
 #details h3
 {
-    color: gray;
+    color: #D8D8D8;
     margin-left: 120px;
-    
-}
+    font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	}
 
 #details label
 {
     margin-left:80px;
     color: #F7D511;
     font-family: 'Helvetica Neue';
-	font-size: 22px;
+	font-size: 24px;
 	font-style: italic;
 	font-variant: normal;
 	font-weight: bold;
 }
+/*
 
 #details h3 button
 {
-    width:80px;
+    width:auto;
+    padding: 10px;
+    background-color: crimson;
+    color: cornsilk;
+}
+*/
+
+#details p
+{
+    margin-left: 120px;
+    color: #D8D8D8;
+    font-size: 22px;
+}
+
+@media screen and (min-width:550px) and (max-width: 800px)
+{
+    .cmp img
+{
+    margin-top: 20px;
+    height:100px;
+}
+.cmp
+{
+    height: auto;
+    float:left;
+    margin: 15px;
+    padding: 5px;
+    color: chocolate;
+    text-align: center;
+    border: 5px solid gray;
+    border-radius: 15px;
+}
+
+.cmp h3
+{
+    font-size: 15px;
+    background-color: #0404B4;
+    padding: 5px;
+}
+
+.cmp span
+{
+    font-size: 10px;
+    color: #585858;
+    float: right;
+    margin:5px;
+}
+
+#details
+{
+    margin:30px;
+    
+}
+
+#details h2
+{
+    font-size: 15px;
+    text-align: center;
+    background-color: darkblue;
+    color: crimson;
+    padding: 5px;
+}
+
+#details h3
+{
+    color: gray;
+    margin-left: 15%;
+    font-size: 10px;
+    
+}
+
+#details label
+{
+    margin-left:10%;
+    color: #F7D511;
+    font-family: 'Helvetica Neue';
+	font-size: 12px;
+}
+
+#details h3 button
+{
+    width:auto;
     padding: 10px;
     background-color: crimson;
     color: cornsilk;
@@ -89,5 +171,96 @@
 
 #details p
 {
-    margin-left: 120px;
+    margin-left: 15%;
+}
+
+    
+}
+
+
+@media screen and (max-width:550px)
+{
+    .cmp img
+{
+    margin-top: 10px;
+    height:60px;
+}
+.cmp
+{
+    height: auto;
+    float:left;
+    margin: 25px;
+    margin-left: 12%;
+    padding: 5px;
+    color: chocolate;
+    text-align: center;
+    border: 5px solid gray;
+    border-radius: 15px;
+    width: 80%;
+}
+
+.cmp h3
+{
+    font-size: 10px;
+    background-color: #0404B4;
+    padding: 5px;
+}
+
+.cmp span
+{
+    font-size: 10px;
+    color: #585858;
+    float: right;
+    margin:5px;
+}
+
+#details
+{
+    margin:30px;
+    
+}
+
+#details h2
+{
+    font-size: 15px;
+    text-align: center;
+    background-color: darkblue;
+    color: crimson;
+    padding: 5px;
+}
+
+#details h3
+{
+    color: gray;
+    margin-left: 15%;
+    font-size: 10px;
+    
+}
+
+#details label
+{
+    margin-left:10%;
+    color: #F7D511;
+    font-family: 'Helvetica Neue';
+	font-size: 12px;
+}
+
+#details h3 button
+{
+    width:auto;
+    padding: 10px;
+    background-color: crimson;
+    color: cornsilk;
+}
+
+#details p
+{
+    margin-left: 15%;
+    font-size: 10px;
+    
+}
+
+    
+} 
+    
 }

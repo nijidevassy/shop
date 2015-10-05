@@ -3,13 +3,16 @@
 <html>
 <head>
     <title>Company Profile</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/company.css">
     <link rel="stylesheet" type="text/css" href="css/about.css">
-
+    
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <script src="assets/vendor/jquery-2.1.4.js"></script>
     <script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
     <script src="assets/vendor/angular-messages.js"></script>
+    <script src="assets/vendor/bootstrap.js"></script>
     
     <script src="js/service/service.js"></script>
     <script src="js/controller/appCntrl.js"></script>
@@ -20,7 +23,7 @@
 </head>
 
     <body>
-<div id="head">
+<div class="head row col-lg-12 col-md-12 col-sm-12 col-xs-12">
     <table style="width:100%">
         <tr>
             <td><img src="assets/images/logo.jpg"></td>
@@ -30,6 +33,6 @@
         </table>
 </div>
         
-     <div ui-view ng-app="company"></div>
+     <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12" ui-view ng-app="company"></div>
     </body>
 </html>
